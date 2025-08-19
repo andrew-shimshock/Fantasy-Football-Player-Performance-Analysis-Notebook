@@ -1,6 +1,6 @@
 
 
-README.md – 2025 Fantasy PPR-Breakout Notebook
+2025 Fantasy PPR-Breakout Notebook
 A data-first tool for finding rising-volume producers in your upcoming PPR drafts. Every cell is 100 % reproducible and free to reuse.
 
 🏗 What it does
