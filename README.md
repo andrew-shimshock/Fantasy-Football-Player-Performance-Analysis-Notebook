@@ -1,4 +1,4 @@
-# � 2025 Fantasy Football Player Performance Analysis  
+# 📊 2025 Fantasy Football Player Performance Analysis  
 **Identify PPR Breakouts Using Historical Trends and ADP**  
 
 ---
