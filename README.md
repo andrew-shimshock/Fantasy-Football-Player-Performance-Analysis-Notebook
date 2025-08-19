@@ -1,65 +1,35 @@
+# � 2025 Fantasy Football Player Performance Analysis  
+**Identify PPR Breakouts Using Historical Trends and ADP**  
 
+---
 
-2025 Fantasy PPR-Breakout Notebook
-A data-first tool for finding rising-volume producers in your upcoming PPR drafts. Every cell is 100 % reproducible and free to reuse.
+## 🧩 About This Project  
+This repository contains a **Jupyter Notebook** for analyzing fantasy football player performance from 2022–2024 and identifying **players gaining PPR share** to target in 2025 drafts. All data is sourced from **Pro Football Reference** and the **ESPN API**.  
 
-🏗 What it does
-Scrapes ESPN free-agents → projected 2025 PPR points per ADP.
+---
 
-Backfills 3 years of PPR history from Pro-Football-Reference.
+## 🚀 Key Features  
+- **Identifies 2024 breakouts** using 2022–2024 PPR history.  
+- Highlights **3-year PPR risers** (improved every season) and **2-year streakers**.  
+- **ADP Value Filter** to find players over/underdrafted relative to 2024 performance.  
+- Export-ready player rankings for WR, RB, and TE categories.  
 
-Flag every player who is climbing in PPR:
+---
 
-2-year streak → 23 → 24 rise
-3-year streak → 22 → 23 → 24 climb
+## 🧭 File Structure  
 
-Returns rankable, position-agnostic tables ready for cheat-sheet export.
+| File/Folder | Description |  
+|--------------|-------------|  
+| `PPR-Gainers.ipynb` | Core notebook with analysis pipeline |  
+| `FantasyData2022_clean.csv`<br>`FantasyData2023_clean.csv`<br>`FantasyData2024_clean.csv` | Historical PPR stat data (2022–2024) |  
+| `requirements.txt` | Python dependencies (`pandas`, `espn-api`, etc.) |  
+| `README.md` | This file |  
 
-📁 File Map
+---
 
-File / Folder	Purpose
-PPR-Gainers.ipynb	Full run-and-tell Jupyter notebook
-FantasyData*.csv	2022–2024 raw PFR stat files
-requirements.txt	Python deps (pandas, espn-api)
-README.md	You are here
-🖥 Quick Start
-Clone
+## 🛠️ Setup Instructions  
 
-bash
-git clone https://github.com/YOU/Rising-PPR-Draft-Guide.git
-cd Rising-PPR-Draft-Guide
-Install deps
-
-bash
-pip install -r requirements.txt
-Add credentials
-Optional: replace espn_s2 / swid in the notebook with your private ESPN API cookie.
-
-Run
-
-bash
-jupyter notebook PPR-Gainers.ipynb
-# Execute all cells → export CSV for your cheat-sheet.
-📈 Key Outputs
-Inside the notebook you’ll find:
-
-Top 3-Year PPR Gainers: players who improved every season.
-Top 2-Year Risers: players who jumped only last year (rookies welcome).
-Export-ready CSVs for WR/RB/TE tables ranked by ∆ PPR 24 vs 23.
-Example extract:
-
-
-Player	Pos	PPR-22	PPR-23	PPR-24	∆23-24
-Jameson Williams	WR	—	78.8	201.3	+122.5
-David Montgomery	RB	178.0	210.5	254.7	+44.2
-Jaylen Warren	RB	89.9	154.4	191.6	+37.2
-🎯 How to use for 2025 drafts
-Filter position → copy CSV → import into your sleeper/dynasty sheet.
-Target 3-year risers late; their trend rarely reverses.
-Use 2-year streaks for upside fliers in rookie/FA drafts.
-🤝 Contributions & Issues
-PRs welcome for new stats/target data sources.
-Open a GitHub issue for bugs or feature requests.
-⚖ License
-MIT — use, fork, remix. Just keep the attribution link.
-
+1. **Clone the repo**:  
+   ```bash
+   git clone https://github.com/andrew-shimshock/Fantasy-Football-Player-Performance-Analysis-Notebook.git
+   cd Fantasy-Football-Player-Performance-Analysis-Notebook
